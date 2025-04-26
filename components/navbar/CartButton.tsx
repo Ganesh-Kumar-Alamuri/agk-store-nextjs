@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { BsCart4 } from "react-icons/bs";
-function CartButton() {
-  const numItems = 0;
+import { fetchCartItems } from "@/utils/actions";
+async function CartButton() {
+  const numItems = await fetchCartItems();
   return (
     <Button
       asChild

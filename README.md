@@ -3410,20 +3410,20 @@ components/single-product/ShareButton.tsx
 ```tsx
 'use client';
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
+Popover,
+PopoverContent,
+PopoverTrigger,
 } from '@/components/ui/popover';
 import { Button } from '../ui/button';
 import { LuShare2 } from 'react-icons/lu';
 
 import {
-  TwitterShareButton,
-  EmailShareButton,
-  LinkedinShareButton,
-  TwitterIcon,
-  EmailIcon,
-  LinkedinIcon,
+TwitterShareButton,
+EmailShareButton,
+LinkedinShareButton,
+TwitterIcon,
+EmailIcon,
+LinkedinIcon,
 } from 'react-share';
 
 function ShareButton({ productId, name }: { productId: string; name: string }) {
